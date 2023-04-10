@@ -444,7 +444,7 @@ if __name__ == "__main__":
             demo.queue(concurrency_count=CONCURRENT_COUNT).launch(
                 server_name="0.0.0.0",
                 server_port=7860,
-                share=False,
+                share=True,
                 favicon_path="./assets/favicon.ico",
             )
     # if not running in Docker
