@@ -289,7 +289,7 @@ def replace_today(prompt):
 def get_geoip():
     try:
         with retrieve_proxy():
-            response = requests.get("https://ipapi.co/json/", timeout=5)
+            response = requests.get("https://ipapi.co/json/", timeout=50)
         data = response.json()
     except:
         data = {"error": True, "reason": "连接ipapi失败"}
