@@ -35,7 +35,7 @@ CONCURRENT_COUNT = 100 # 允许同时使用的用户数量
 SIM_K = 5
 INDEX_QUERY_TEMPRATURE = 1.0
 
-CHUANHU_TITLE = """<h1 align="left">川虎Chat 🚀</h1>"""
+CHUANHU_TITLE = """<h1 align="left">幺幺五五AI（南开大学22级MBA威虎五班）</h1>"""
 CHUANHU_DESCRIPTION = """\
 <div align="center" style="margin:16px 0">
 
