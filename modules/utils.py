@@ -289,7 +289,7 @@ def replace_today(prompt):
 def get_geoip():
     try:
         with retrieve_proxy():
-            response = requests.get("https://ipapi.co/json/", timeout=5)
+            response = requests.get("https://ipapi.co/json/", timeout=50)
         data = response.json()
     except:
         data = {"error": True, "reason": "连接ipapi失败"}
@@ -303,6 +303,7 @@ def get_geoip():
             return f"获取IP地理位置失败。原因：{data['reason']}。你仍然可以使用聊天功能。"
     else:
         country = data["country_name"]
+        country = "United States"
         if country == "China":
             text = "**您的IP区域：中国。请立即检查代理设置，在不受支持的地区使用API可能导致账号被封禁。**"
         else:
