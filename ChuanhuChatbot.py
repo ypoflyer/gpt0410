@@ -77,12 +77,12 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
                         usageTxt = gr.Markdown("多账号模式已开启，无需输入key，可直接开始对话", elem_id="usage_display", elem_classes="insert_block")
                     else:
                         usageTxt = gr.Markdown("**发送消息** 或 **提交key** 以显示额度", elem_id="usage_display", elem_classes="insert_block")
-                    model_select_dropdown = gr.Dropdown(
-                        label="选择模型", choices=MODELS, multiselect=False, value=MODELS[DEFAULT_MODEL], interactive=True
-                    )
-                    lora_select_dropdown = gr.Dropdown(
-                        label="选择LoRA模型", choices=[], multiselect=False, interactive=True, visible=False
-                    )
+                    #model_select_dropdown = gr.Dropdown(
+                    #    label="选择模型", choices=MODELS, multiselect=False, value=MODELS[DEFAULT_MODEL], interactive=True
+                    #)
+                    #lora_select_dropdown = gr.Dropdown(
+                    #    label="选择LoRA模型", choices=[], multiselect=False, interactive=True, visible=False
+                    #)
                     with gr.Row():
                         use_streaming_checkbox = gr.Checkbox(
                             label="实时传输回答", value=True, visible=ENABLE_STREAMING_OPTION
