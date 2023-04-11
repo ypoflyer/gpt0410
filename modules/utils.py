@@ -287,6 +287,9 @@ def replace_today(prompt):
 
 
 def get_geoip():
+    return (
+        f"skip country check"
+    )
     try:
         with retrieve_proxy():
             response = requests.get("https://ipapi.co/json/", timeout=50)
