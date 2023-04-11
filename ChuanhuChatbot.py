@@ -427,7 +427,8 @@ logging.info(
     + colorama.Style.RESET_ALL
 )
 # 默认开启本地服务器，默认可以直接从IP访问，默认不创建公开分享链接
-demo.title = "川虎ChatGPT 🚀"
+#demo.title = "川虎ChatGPT 🚀"
+demo.title = "幺幺五五AI（南开大学22级MBA5班）"
 
 if __name__ == "__main__":
     reload_javascript()
